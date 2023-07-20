@@ -6,7 +6,7 @@ root = Tk()
 frame = Frame(root)
 frame.pack(padx=20, pady=20)
 
-def myClick():
+def resizeClick():
     r = resizer()
     r.resize(eFolder.get(), float(eFactor.get()), frame)
 
@@ -33,7 +33,7 @@ eFactor = Entry(frame, width=10)
 eFactor.insert(0, ".25")
 eFactor.pack()
 
-bResize = Button(frame, text="resize", padx=50, command=myClick)
+bResize = Button(frame, text="resize", padx=50, command=resizeClick)
 bResize.pack()
 
 root.mainloop()
