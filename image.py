@@ -18,13 +18,17 @@ def dialogClick():
 
 lFolder = Label(frame, text="Enter folder path")
 lFolder.pack()
+
 eFolder = Entry(frame, width=100)
 eFolder.insert(0, "c:\\users\\ricwe\\pictures\\2023_07_03 Phone Cabin Visit\\Ranch\\")
 eFolder.pack()
+
 bFileDialog = Button(frame, text="find folder", padx=50, command=dialogClick)
 bFileDialog.pack()
+
 lFactor = Label(frame, text="Enter scale factor")
 lFactor.pack()
+
 eFactor = Entry(frame, width=10)
 eFactor.insert(0, ".25")
 eFactor.pack()
